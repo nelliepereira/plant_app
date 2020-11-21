@@ -54,7 +54,7 @@ class _planthomepageState extends State<planthomepage> {
                   Padding(
                     padding: const EdgeInsets.only(top: 120.0, left: 250),
                     child: Image.network(
-                      'https://besthomelytips.com/wp-content/uploads/2019/07/Care-for-Air-Plants-Indoors.jpg',
+                      'https://besthomelytips.com/wp-content/uploads/2019/07/Care-for-Air-Plants-Indoors.jpg', height: 180,
                     ),
                   ),
                   Padding(
@@ -64,13 +64,15 @@ class _planthomepageState extends State<planthomepage> {
                       height: 120,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 172.0, left: 20),
+                  //Padding(
+                    //padding: const EdgeInsets.only(top: 172.0, left: 20),
+                  Positioned(
+                    bottom: 0,
                     child: Text(
                       ' Welcome to Plant infoStore',
                       style: TextStyle(fontSize: 25, color: Colors.white),
-                    ),
-                  )
+                    ),),
+                  //)
                 ],
               ),
             ),

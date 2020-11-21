@@ -16,6 +16,18 @@ class _moredetailsState extends State<moredetails> {
       body: Column(
         children: [
           Container(
+            alignment: Alignment.centerLeft,
+            width: 400,
+            height: 80,
+            decoration: BoxDecoration(color: Colors.white),
+            child: IconButton(
+              onPressed: () {
+                //Navigator.pop(context,MaterialPageRoute(builder: (_) => plantdetails(obj)));
+              },
+              icon: Icon(Icons.arrow_back, color: Colors.grey, size: 30),
+            ),
+          ),
+          Container(
             height: 35, width: 45,
               decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20))),
               child:

@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'plantproductclass.dart';
-import 'moredetails.dart';
+import 'package:plant_app/moredetails.dart';
+import 'package:flutter/cupertino.dart';
+import 'planthomepage.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 
 class plantdetails extends StatefulWidget {
   final plantcls obj;
@@ -15,11 +19,6 @@ class _plantdetailsState extends State<plantdetails> {
     final scrheight = MediaQuery.of(context).size.height;
     final scrwidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        iconTheme: IconThemeData(color: Colors.grey),
-      ),
       body: SingleChildScrollView(
         child: Container(
           decoration: BoxDecoration(color: Colors.green),
@@ -27,7 +26,21 @@ class _plantdetailsState extends State<plantdetails> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Container(
-                height: 450,
+                alignment: Alignment.centerLeft,
+                width: scrwidth,
+                height: 80,
+                decoration: BoxDecoration(color: Colors.white),
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.pop(context,
+                        MaterialPageRoute(builder: (_) => planthomepage()));
+                  },
+                  icon: Icon(Icons.arrow_back, color: Colors.grey, size: 30),
+                ),
+              ),
+              FaIcon(FontAwesomeIcons.palette),
+              Container(
+                height: 435,
                 width: 450,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -56,16 +69,20 @@ class _plantdetailsState extends State<plantdetails> {
                       ),
                       //SizedBox(height: 10),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Container(
-                            height: 50,
-                            width: 50,
-                            decoration: BoxDecoration(
-                                color: Colors.green,
-                                borderRadius: BorderRadius.circular(30)),
-                            child: Icon(
-                              Icons.shopping_cart_outlined,
-                              color: Colors.white,
+                          Padding(
+                            padding: const EdgeInsets.only(top: 150.0),
+                            child: Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                  color: Colors.green,
+                                  borderRadius: BorderRadius.circular(30)),
+                              child: Icon(
+                                Icons.shopping_cart_outlined,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                           SizedBox(width: 50),
@@ -185,9 +202,10 @@ class _plantdetailsState extends State<plantdetails> {
                       child: Row(
                         children: [
                           Icon(
-                            Icons.traffic,
+                            Icons.local_florist,
                             color: Colors.white,
                           ),
+
                           Text(
                             ' Greenery nyc',
                             style: TextStyle(color: Colors.white, fontSize: 20),
@@ -200,7 +218,7 @@ class _plantdetailsState extends State<plantdetails> {
         Overview''',
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 35,
+                            fontSize: 30,
                             fontWeight: FontWeight.bold)),
                     SizedBox(height: 30),
                     Center(
@@ -210,8 +228,8 @@ class _plantdetailsState extends State<plantdetails> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Icon(Icons.water_damage, color: Colors.white),
-                              Text('Water',
+                              Icon(CupertinoIcons.drop, color: Colors.white),
+                              Text('Water', textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 20)),
                               Text(widget.obj.watering,
@@ -223,7 +241,8 @@ class _plantdetailsState extends State<plantdetails> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Icon(Icons.water_damage, color: Colors.white),
+                              Icon(CupertinoIcons.smallcircle_fill_circle,
+                                  color: Colors.white),
                               Text('Humidity',
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 20)),
@@ -236,8 +255,8 @@ class _plantdetailsState extends State<plantdetails> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Icon(Icons.water_damage, color: Colors.white),
-                              Text('Size               ',
+                              Icon(CupertinoIcons.resize, color: Colors.white),
+                              Text('Size                 ',
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 20)),
                               Text(widget.obj.size,
@@ -311,13 +330,15 @@ class _plantdetailsState extends State<plantdetails> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   IconButton(
-                    icon: Icon(
-                      Icons.keyboard_arrow_down_sharp, color: Colors.white, size: 20,),
-                    tooltip: 'click to go to next page',
-                    onPressed: (){
-                      //Navigator.push(context, MaterialPageRoute(builder: (_)=> moredetails(plantcllist[plantcls])));
-                    }
-                  ),
+                      icon: Icon(
+                        Icons.keyboard_arrow_down_sharp,
+                        color: Colors.white,
+                        size: 35,
+                      ),
+                      tooltip: 'click to go to next page',
+                      onPressed: () {
+                         //Navigator.push(context, MaterialPageRoute(builder: (_)=> moredetails(plantcllist[index])));
+                      }),
                   SizedBox(width: 100),
                   Container(
                     height: 50,
@@ -336,8 +357,10 @@ class _plantdetailsState extends State<plantdetails> {
                               Icons.shopping_cart,
                               color: Colors.white,
                             )),
-                        Text('add to cart', style: TextStyle(color: Colors.white),
-                                                  )
+                        Text(
+                          'add to cart',
+                          style: TextStyle(color: Colors.white),
+                        )
                       ],
                     ),
                   ),
