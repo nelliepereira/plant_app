@@ -73,22 +73,21 @@ List<plantcls> plantcllist = [
   ),
 
   plantcls(
-    name: 'Fidel Tree',
-    image: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1591267171/sjhnprqx2swoq8uyvnm2.jpg',
-    leafimage: ' https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1535696509/products/ficus-lyrata-vertakt-de7ca3.jpg',
-    desc: ''' Fiddle-leaf fig, Fiddle-leaf fig; Banjo fig ''',
-    price: '£250.00',
-    water: '250',
-    temp: '10',
-    watering: 'Every 10 days',
-    humidity: 'Upto 80%',
-    size: '38 - 50',
-    longdesc: '''  This fiddle leaf fig tree is a mature version of our Fidel.
+      name: 'Fidel Tree',
+      image: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1591267171/sjhnprqx2swoq8uyvnm2.jpg',
+      leafimage: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1535696509/products/ficus-lyrata-vertakt-de7ca3.jpg',    desc: ''' Fiddle-leaf fig, Fiddle-leaf fig; Banjo fig ''',
+      price: '£250.00',
+      water: '250',
+      temp: '10',
+      watering: 'Every 10 days',
+      humidity: 'Upto 80%',
+      size: '38 - 50',
+      longdesc: '''This fiddle leaf fig tree is a mature version of our Fidel.
 You may not be surprised to hear this plant is from the rainforests of West Africa. You might be surprised to know 
 that it frequently grows as an epiphyte. That means it starts its life not on the ground, but high up in the crevices 
-of larger trees. As it grows, it sends roots down to the ground, which wrap around its host and eventually strangle it. 
-Quite fittingly dramatic for such a star plant. ''',
-    pot: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1587555284/wrrn6bjciyqk0eis2trh.jpg',
+of larger trees. As it grows, it sends roots down to the ground, which wrap around its host and eventually strangle it. Quite 
+fittingly dramatic for such a star plant. ''',
+      pot: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1587555284/wrrn6bjciyqk0eis2trh.jpg',
       potdesc: '''Clean design and honest materials. That’s what these minimalist concrete pots are all about. When the design is this simple, 
     the finish has to be perfect. '''
   ),
@@ -133,22 +132,21 @@ Quite fittingly dramatic for such a star plant. ''',
   ),
 
   plantcls(
-    name: 'Fidel Tree',
-    image: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1591267171/sjhnprqx2swoq8uyvnm2.jpg',
-    leafimage: ' https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1535696509/products/ficus-lyrata-vertakt-de7ca3.jpg',
-    desc: ''' Fiddle-leaf fig, Fiddle-leaf fig; Banjo fig ''',
-    price: '£250.00',
-    water: '250',
-    temp: '10',
-    watering: 'Every 10 days',
-    humidity: 'Upto 80%',
-    size: '38 - 50',
-    longdesc: ''' This fiddle leaf fig tree is a mature version of our Fidel.
+      name: 'Fidel Tree',
+      image: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1591267171/sjhnprqx2swoq8uyvnm2.jpg',
+      leafimage: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1535696509/products/ficus-lyrata-vertakt-de7ca3.jpg',    desc: ''' Fiddle-leaf fig, Fiddle-leaf fig; Banjo fig ''',
+      price: '£250.00',
+      water: '250',
+      temp: '10',
+      watering: 'Every 10 days',
+      humidity: 'Upto 80%',
+      size: '38 - 50',
+      longdesc: '''This fiddle leaf fig tree is a mature version of our Fidel.
 You may not be surprised to hear this plant is from the rainforests of West Africa. You might be surprised to know 
 that it frequently grows as an epiphyte. That means it starts its life not on the ground, but high up in the crevices 
-of larger trees. As it grows, it sends roots down to the ground, which wrap around its host and eventually strangle it. 
-Quite fittingly dramatic for such a star plant.  ''',
-    pot: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1587555284/wrrn6bjciyqk0eis2trh.jpg',
+of larger trees. As it grows, it sends roots down to the ground, which wrap around its host and eventually strangle it. Quite 
+fittingly dramatic for such a star plant. ''',
+      pot: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1587555284/wrrn6bjciyqk0eis2trh.jpg',
       potdesc: '''Clean design and honest materials. That’s what these minimalist concrete pots are all about. When the design is this simple, 
     the finish has to be perfect. '''
   ),
@@ -174,22 +172,21 @@ Quite fittingly dramatic for such a star plant.  ''',
   ),
 
   plantcls(
-    name: 'Fidel Tree',
-    image: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1591267171/sjhnprqx2swoq8uyvnm2.jpg',
-    leafimage: ' https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1535696509/products/ficus-lyrata-vertakt-de7ca3.jpg',
-    desc: ''' Fiddle-leaf fig, Fiddle-leaf fig; Banjo fig ''',
-    price: '£250.00',
-    water: '250',
-    temp: '10',
-    watering: 'Every 10 days',
-    humidity: 'Upto 80%',
-    size: '38 - 50',
-    longdesc: ''' This fiddle leaf fig tree is a mature version of our Fidel.
+      name: 'Fidel Tree',
+      image: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1591267171/sjhnprqx2swoq8uyvnm2.jpg',
+      leafimage: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1535696509/products/ficus-lyrata-vertakt-de7ca3.jpg',    desc: ''' Fiddle-leaf fig, Fiddle-leaf fig; Banjo fig ''',
+      price: '£250.00',
+      water: '250',
+      temp: '10',
+      watering: 'Every 10 days',
+      humidity: 'Upto 80%',
+      size: '38 - 50',
+      longdesc: '''This fiddle leaf fig tree is a mature version of our Fidel.
 You may not be surprised to hear this plant is from the rainforests of West Africa. You might be surprised to know 
 that it frequently grows as an epiphyte. That means it starts its life not on the ground, but high up in the crevices 
-of larger trees. As it grows, it sends roots down to the ground, which wrap around its host and eventually strangle it. 
-Quite fittingly dramatic for such a star plant.  ''',
-    pot: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1587555284/wrrn6bjciyqk0eis2trh.jpg',
+of larger trees. As it grows, it sends roots down to the ground, which wrap around its host and eventually strangle it. Quite 
+fittingly dramatic for such a star plant. ''',
+      pot: 'https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1587555284/wrrn6bjciyqk0eis2trh.jpg',
       potdesc: '''Clean design and honest materials. That’s what these minimalist concrete pots are all about. When the design is this simple, 
     the finish has to be perfect. '''
   ),

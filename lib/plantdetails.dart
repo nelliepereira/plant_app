@@ -5,7 +5,6 @@ import 'package:flutter/cupertino.dart';
 import 'planthomepage.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
 class plantdetails extends StatefulWidget {
   final plantcls obj;
   const plantdetails(this.obj);
@@ -16,7 +15,7 @@ class plantdetails extends StatefulWidget {
 class _plantdetailsState extends State<plantdetails> {
   @override
   Widget build(BuildContext context) {
-    final scrheight = MediaQuery.of(context).size.height;
+    //final scrheight = MediaQuery.of(context).size.height;
     final scrwidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SingleChildScrollView(
@@ -38,7 +37,6 @@ class _plantdetailsState extends State<plantdetails> {
                   icon: Icon(Icons.arrow_back, color: Colors.grey, size: 30),
                 ),
               ),
-              FaIcon(FontAwesomeIcons.palette),
               Container(
                 height: 435,
                 width: 450,
@@ -201,11 +199,10 @@ class _plantdetailsState extends State<plantdetails> {
                       padding: const EdgeInsets.all(20.0),
                       child: Row(
                         children: [
-                          Icon(
-                            Icons.local_florist,
+                          FaIcon(
+                            FontAwesomeIcons.leaf,
                             color: Colors.white,
                           ),
-
                           Text(
                             ' Greenery nyc',
                             style: TextStyle(color: Colors.white, fontSize: 20),
@@ -229,7 +226,8 @@ class _plantdetailsState extends State<plantdetails> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Icon(CupertinoIcons.drop, color: Colors.white),
-                              Text('Water', textAlign: TextAlign.center,
+                              Text('Water',
+                                  textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 20)),
                               Text(widget.obj.watering,
@@ -241,8 +239,10 @@ class _plantdetailsState extends State<plantdetails> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Icon(CupertinoIcons.smallcircle_fill_circle,
-                                  color: Colors.white),
+                              FaIcon(
+                                FontAwesomeIcons.thermometerEmpty,
+                                color: Colors.white,
+                              ),
                               Text('Humidity',
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 20)),
@@ -255,7 +255,10 @@ class _plantdetailsState extends State<plantdetails> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Icon(CupertinoIcons.resize, color: Colors.white),
+                              FaIcon(
+                                FontAwesomeIcons.ruler,
+                                color: Colors.white,
+                              ),
                               Text('Size                 ',
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 20)),
@@ -330,15 +333,16 @@ class _plantdetailsState extends State<plantdetails> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   IconButton(
-                      icon: Icon(
-                        Icons.keyboard_arrow_down_sharp,
-                        color: Colors.white,
-                        size: 35,
-                      ),
-                      tooltip: 'click to go to next page',
-                      onPressed: () {
-                         //Navigator.push(context, MaterialPageRoute(builder: (_)=> moredetails(plantcllist[index])));
-                      }),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => moredetails(widget.obj)));
+                    },
+                    icon: Icon(
+                      Icons.keyboard_arrow_down_sharp,
+                      color: Colors.white,
+                      size: 35,
+                    ),
+                    tooltip: 'click to go to next page',
+                  ),
                   SizedBox(width: 100),
                   Container(
                     height: 50,
